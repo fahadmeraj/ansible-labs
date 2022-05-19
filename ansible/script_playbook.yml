@@ -1,0 +1,8 @@
+---
+-
+  name: script-module
+  hosts: webserver1
+  tasks:
+    -
+      name: "script-module"
+      script: testscript.sh fahad

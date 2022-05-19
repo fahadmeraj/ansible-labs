@@ -1,0 +1,11 @@
+- 
+  name: 'error handling'
+  hosts: webserver1
+  tasks:
+    - 
+      name: 'first task'
+      command: touch /tmp/task/task1.txt
+      ignore_errors: true
+    - 
+      name: 'second task'
+      command: touch /tmp/task2.txt

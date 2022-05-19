@@ -1,0 +1,12 @@
+- 
+  name: loop_playbook
+  hosts: webserver1
+  become: yes
+  tasks:
+    -
+      name: "loop_playbook"
+      apt: name="{{item}}" state=absent
+      with_items:
+        - vsftpd
+        - tree
+  

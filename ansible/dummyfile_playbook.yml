@@ -1,0 +1,7 @@
+---
+- name: dummy file
+  hosts: webserver1
+  tasks:
+    -
+      name: "create dummy file"
+      command: touch /tmp/ansible_dummy_webservers.txt

@@ -1,0 +1,11 @@
+---
+-
+  name: condition and variable
+  hosts: webserver1
+  vars:
+    age: 17
+  tasks:
+    -
+      name: "condition and variable"
+      command: touch /tmp/17.txt
+      when: age==17

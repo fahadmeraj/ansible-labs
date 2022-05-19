@@ -1,0 +1,13 @@
+---
+-
+  name: synchronous task
+  hosts: webserver1
+  tasks:
+    -
+      name: "sleep for 60s"
+      command: sleep 60
+      async: 60
+      poll: 0
+    -
+      name: "second task"
+      command: touch /tmp/secondtask.txt

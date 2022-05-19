@@ -1,0 +1,9 @@
+---
+-
+  name: copy file to remote with owner and group mentined
+  hosts: webserver1
+  become: yes
+  tasks:
+    -
+      name: "copy dummy file to remote with owner and group"
+      copy: src=test.yml dest=/tmp/ owner=root group=root mode=0644

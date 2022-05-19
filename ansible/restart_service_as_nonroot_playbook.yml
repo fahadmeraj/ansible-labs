@@ -1,0 +1,9 @@
+---
+-
+  name: restart a service with non root user
+  hosts: webserver1
+  become: yes
+  tasks:
+    -
+      name: "restart apache2"
+      service: name=apache2 state=restarted

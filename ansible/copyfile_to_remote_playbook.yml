@@ -1,0 +1,8 @@
+---
+-
+  name: copy local file to remote
+  hosts: webserver1
+  tasks:
+    -
+      name: "copy dummy files to remote"
+      copy: src=test.yml dest=/tmp/

@@ -1,0 +1,9 @@
+---
+-
+  name: line-in-file-module
+  hosts: webserver1
+  become: yes
+  tasks:
+    -
+      name: "line-in-file-module"
+      lineinfile: path=/tmp/test.txt line="fahad"

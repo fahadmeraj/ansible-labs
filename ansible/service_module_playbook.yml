@@ -1,0 +1,11 @@
+---
+-
+  name: service module
+  hosts: webserver1
+  become: yes
+  tasks:
+    -
+      name: "service module"
+      service:
+        name: apache2
+        state: stopped

@@ -1,0 +1,8 @@
+---
+- name: update web server
+  hosts: webserver1
+  tasks:
+    - name: ensure apache is at the latest version
+      yum:
+        name: apache2
+        state: latest

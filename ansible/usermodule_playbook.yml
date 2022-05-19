@@ -1,0 +1,9 @@
+---
+-
+  name: user module
+  hosts: webserver1
+  become: yes
+  tasks:
+    -
+      name: "user module"
+      user: name="mytestuser" state=present password="12345"

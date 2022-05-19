@@ -1,0 +1,13 @@
+---
+-
+  name: package management module
+  hosts: webserver1
+  become: yes
+  tasks:
+    -
+      name: "install apache and mariadb"
+      apt:
+        name:
+          - apache2
+          - mariadb-server
+        state: latest

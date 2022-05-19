@@ -1,0 +1,9 @@
+---
+-
+  name: modularization playbook
+  hosts: webserver1
+  become: yes
+  vars_files:
+    - variable.yml
+  tasks:
+    - include: task.yml
