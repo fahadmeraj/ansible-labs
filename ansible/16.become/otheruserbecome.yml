@@ -1,0 +1,10 @@
+- 
+  name: this is our first play.
+  hosts: webserver
+  become: yes
+  become_user: saurav
+  become_method: su
+  tasks: 
+    - 
+      name: "login username"
+      command: touch /tmp/become_saurav.txt

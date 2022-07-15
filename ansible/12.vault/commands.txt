@@ -1,0 +1,4 @@
+ansible-vault encrypt inventory.txt --output enc_inven.txt
+ansible-vault view enc_inven.txt
+ansible-playbook -i enc_inven.txt playbook.yml --ask-vault-pass
+
